@@ -9,3 +9,7 @@ mkdir pk3/models
 mkdir pk3/scripts
 mkdir pk3/sound
 mkdir pk3/textures
+
+
+echo "Created build directory structure:"
+find . -type d | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/|-\1/"
