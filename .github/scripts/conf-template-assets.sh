@@ -6,7 +6,7 @@ cd "$1"
 
 base_name="$MAP_BASE_NAME"
 file_name="$MAP_FILE_NAME"
-long_name="$MAP_LONG_NAME"
+version_name="$MAP_VERSION_NAME"
 
 ## Function declarations
 
@@ -54,7 +54,7 @@ conf_file_name "maps/$base_name" "pk3/maps/$file_name" ("tga", "TGA")
 # Configure the scripts
 conf_file_name "scripts/$base_name" "pk3/scripts/$file_name" ("shader", "arena")
 conf_file_content "pk3/scripts/$file_name.arena" "$base_name" "$file_name"
-conf_file_content "pk3/scripts/$file_name.arena" "\[MAP_LONG_NAME]" "$long_name"
+conf_file_content "pk3/scripts/$file_name.arena" "\[MAP_VERSION_NAME]" "$version_name"
 # Use this instead for the shader file, when models are configured:
 #conf_file_content "pk3/scripts/$file_name.shader" "$base_name" "$file_name"
 conf_file_content "pk3/scripts/$file_name.shader" "textures\/$base_name" "textures\/$file_name"
