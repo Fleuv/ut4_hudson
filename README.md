@@ -27,7 +27,8 @@
   - [Beta 3](#beta-3)
   - [Beta 2](#beta-2)
 - [License](#license)
-- [Contact](#contact)
+- [Contributors](#contributors)
+- [Additional credits][#additional-credits]
 
 ## About
 
@@ -53,7 +54,7 @@ To start working on this map, you should follow these steps:
    ./install.sh ABS_PATH_TO_Q3UT4
    ```
    Where `ABS_PATH_TO_Q3UT4` is equal to the absolute path to your `q3ut4` folder of the game used for development.
-4. Open up your radiant editor and start building!
+3. Open up your radiant editor and start building!
 
 Keep in mind that not all new files added to your workspace will be added to the `q3ut4` folder, because they're linked thanks to the `install.sh` script. Which means only contents in folders such as `textures/ut4_hudson/*` will be added.
 
@@ -100,18 +101,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contributors
 
-Fleuv - [@fleuv](//github.com/Fleuv)
+- Fleuv - [@fleuv](//github.com/Fleuv)
 
 ## Additional credits
 
-- id Software ~ For making Q3.
-- Silicon Ice Development/Frozen Sand LLC ~ For making Urban Terror and so strongly supporting the UT community.
-- https://www.kpf.com/projects/55-hudson-yards/ ~ for the levelshot, inspiration and a source for textures.
-- https://oneluxstudio.com/portfolio/55-hudson-yards-lobby/ ~ for inspiration and a source for textures.
+- [id Software][idsoftware]: For making Q3.
+- [Silicon Ice Development/Frozen Sand LLC][frozensand]: For making Urban Terror and so strongly supporting the UT community.
+- [KPF][kpf]: For the levelshot, inspiration and a source for textures.
+- [One Lux Studio][oneluxstudio]: For inspiration and a source for textures.
 
 <!-- links & images -->
 
 [latest-release]: //github.com/fleuv/ut4_hudson/releases/latest
-[gtkradiant]: //icculus.org/gtkradiant/
+[gtkradiant]: //icculus.org/gtkradiant
 [netradiant]: //github.com/Garux/netradiant-custom
+[idsoftware]: //www.idsoftware.com
+[frozensand]: //www.frozensand.com
+[kpf]: //www.kpf.com/projects/55-hudson-yards/
+[oneluxstudio]: //oneluxstudio.com/portfolio/55-hudson-yards-lobby/
 [badge-publish-status]: https://img.shields.io/github/workflow/status/fleuv/ut4_hudson/publish
