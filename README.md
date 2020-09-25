@@ -28,7 +28,7 @@
   - [Beta 2](#beta-2)
 - [License](#license)
 - [Contributors](#contributors)
-- [Additional credits][#additional-credits]
+- [Additional credits](#additional-credits)
 
 ## About
 
@@ -112,11 +112,11 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- links & images -->
 
-[latest-release]: //github.com/fleuv/ut4_hudson/releases/latest
+[latest-release]: //github.com/fleuv/ut4_hudson/releases
 [gtkradiant]: //icculus.org/gtkradiant
 [netradiant]: //github.com/Garux/netradiant-custom
 [idsoftware]: //www.idsoftware.com
 [frozensand]: //www.frozensand.com
 [kpf]: //www.kpf.com/projects/55-hudson-yards/
 [oneluxstudio]: //oneluxstudio.com/portfolio/55-hudson-yards-lobby/
-[badge-publish-status]: https://img.shields.io/github/workflow/status/fleuv/ut4_hudson/publish
+[badge-publish-status]: //github.com/Fleuv/ut4_hudson/workflows/Publish%20Release/badge.svg
