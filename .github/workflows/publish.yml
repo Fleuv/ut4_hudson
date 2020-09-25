@@ -1,0 +1,35 @@
+name: Publish Release
+
+on:
+  push:
+    tags:
+      - "v*"
+      - "rc*"
+      - "b*"
+      - "t*"
+
+jobs:
+  build_release:
+    name: Build and release package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Get template variables
+        uses: c-py/action-dotenv-to-setenv@v1
+      - name: Get map version
+        run: echo ::set-env name=MAP_VERSION::${GITHUB_REF#refs/*/}
+      - name: Configure build directory
+        run: bash ${GITHUB_WORKSPACE}/.github/scripts/conf-build-dir.sh ${GITHUB_WORKSPACE}
+      - name: Configure map version name
+        run: bash ${GITHUB_WORKSPACE}/.github/scripts/conf-map-version-name.sh
+      - name: Configure template variables
+        run: bash ${GITHUB_WORKSPACE}/.github/scripts/conf-template-variables.sh
+      - name: Configure template assets
+        run: bash ${GITHUB_WORKSPACE}/.github/scripts/conf-template-assets.sh ${GITHUB_WORKSPACE}
+      - name: Publish Release
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: "${MAP_FILE_NAME}.zip"
+          directory: "pk3"
+          exclusions: "*.map *.bak *.srf *.prt *.md3 *.obj *.mtl"
