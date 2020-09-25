@@ -42,17 +42,17 @@ conf_file_content() {
 ## Main executions
 
 # Configure the levelshot
-conf_file_name "levelshots/$base_name" "pk3/levelshots/$file_name" ("jpg", "tga", "TGA")
+conf_file_name "levelshots/$base_name" "pk3/levelshots/$file_name" "jpg", "tga", "TGA"
 
 # Configure the minimap
-conf_file_name "maps/$base_name" "pk3/maps/$file_name" ("tga", "TGA")
+conf_file_name "maps/$base_name" "pk3/maps/$file_name" "tga", "TGA"
 
 # Configure the models
 # TODO: replace texture paths in all material (.mtl) files
 #conf_file_name "models/$base_name" "pk3/models/$file_name"
 
 # Configure the scripts
-conf_file_name "scripts/$base_name" "pk3/scripts/$file_name" ("shader", "arena")
+conf_file_name "scripts/$base_name" "pk3/scripts/$file_name" "shader", "arena"
 conf_file_content "pk3/scripts/$file_name.arena" "$base_name" "$file_name"
 conf_file_content "pk3/scripts/$file_name.arena" "\[MAP_VERSION_NAME]" "$version_name"
 # Use this instead for the shader file, when models are configured:
