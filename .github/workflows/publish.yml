@@ -17,6 +17,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Get template variables
         uses: c-py/action-dotenv-to-setenv@v1
+        with:
+          env-file: .env
       - name: Get map version
         run: echo ::set-env name=MAP_VERSION::${GITHUB_REF#refs/*/}
       - name: Configure build directory
